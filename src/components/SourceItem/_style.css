@@ -1,0 +1,25 @@
+.source-item {
+  --hover-bg: var(--gray-7);
+  --active-bg: var(--gray-9);
+  --regular-bg: var(--gray-5);
+  --font-weight: 400;
+}
+
+.source-item {
+  background: var(--regular-bg);
+  color: white;
+  font-size: 1vw;
+  font-weight: var(--font-weight);
+  padding: 0.8vw 1vw;
+  cursor: pointer;
+  &:hover {
+    background: var(--hover-bg);
+  }
+  &.is-active {
+    background: var(--active-bg);
+  }
+  .source-item__icon {
+    color: white;
+    font-size: 1.8vw;
+  }
+}

@@ -1,0 +1,22 @@
+.nav {
+  width: var(--nav-width);
+  .nav__sources-wrapper,
+  .nav__help-wrapper {
+    margin: 2vw 1vw;
+    &-dell {
+      padding: 2vw 0;
+    }
+  }
+  .nav__help-wrapper {
+    border: var(--border-style);
+    @apply drop-shadow-sm;
+    .nav__help-wrapper__header {
+      background: var(--gray-7);
+      padding: 0.8vw;
+      color: white;
+    }
+    .nav__help-wrapper__content {
+      padding: 0.5vw;
+    }
+  }
+}

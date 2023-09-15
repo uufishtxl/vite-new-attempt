@@ -1,0 +1,33 @@
+:root {
+  /* Color Schemes */
+  --gray-9: #27272a;
+  --gray-7: #52525b;
+  --gray-5: #71717a;
+  --gray-2: #e4e4e7;
+  --blue-7: #0369a1;
+  /* Colors */
+  --theme-hp-color: #3f3f46;
+  --theme-dell-color: #fff;
+  --hp-text-color: #fff;
+  --dell-text-color: #3f3f46;
+  --monitor-control-width: 76vw;
+  --nav-width: 20vw;
+  --background-general: url("your-image-url") center / contain no-repeat;
+  --joystick-container-width: 10vw;
+  --joystick-width: 9vw;
+  --joystick-margin-top: 40vw;
+  /* calc(var(--screen-height) + var(--screen-padding-top)); */
+  --joystick-hover-color: rgba(64, 163, 219, 0.5);
+
+  /* border */
+  --border-style: 0.5px solid var(--gray-2);
+
+  /* screen area */
+  --screen-border: 0.6vw;
+  --screen-height: 28.8vw;
+  --screen-padding-top: 5.9vw;
+
+  /* power button */
+  --power-btn-top-from-screen: 8.5vw;
+  --power-btn-right: 3.5vw;
+}

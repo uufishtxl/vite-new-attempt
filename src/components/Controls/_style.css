@@ -1,0 +1,45 @@
+.joystick-wrapper {
+  margin-top: calc(
+    var(--screen-height) + var(--screen-padding-top) -
+      var(--joystick-container-width)
+  );
+  .joystick {
+    width: var(--joystick-width);
+    height: var(--joystick-width);
+    background: var(--background-general);
+    background-image: url("/img/controls.svg");
+    position: relative;
+    .joystick__overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      .joystick__overlay_grid {
+        width: 3vw;
+        height: 3vw;
+        cursor: pointer;
+        border-radius: 50%;
+        &:hover {
+          background: var(--joystick-hover-color);
+        }
+        &#up {
+          grid-column: 2 / 3;
+        }
+        &#left {
+          grid-row: 2 / 3;
+        }
+        &#center {
+          grid-column: 2 / 3;
+          grid-row: 2 / 3;
+        }
+        &#right {
+          grid-column: 3 / 4;
+          grid-row: 2 / 3;
+        }
+        &#down {
+          grid-column: 2 / 3;
+          grid-row: 3 / 4;
+        }
+      }
+    }
+  }
+}

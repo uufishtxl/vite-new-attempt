@@ -1,0 +1,37 @@
+@import "./reset.css";
+@import "./vars.css";
+@import "../components/layout/Header/_style.css";
+@import "../components/layout/Nav/_style.css";
+@import "../components/layout/Main/_style.css";
+@import "../components/Controls/_style.css";
+@import "../components/SourceItem/_style.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  /* 禁止滚动 */
+  overflow: hidden;
+  /* 隐藏垂直滚动条 */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* 隐藏水平滚动条 */
+  ::-webkit-scrollbar-horizontal {
+    display: none;
+  }
+}
+
+.main {
+  transform: translateX(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.main__no-nav {
+  transform: translateX(-20vw);
+}

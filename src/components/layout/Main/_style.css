@@ -1,0 +1,35 @@
+.display-wrapper {
+  width: var(--monitor-control-width);
+  margin-left: calc(
+    (100vw - var(--nav-width) - var(--monitor-control-width)) / 2
+  );
+  transition: margin-left 0.2s ease-in-out;
+  &.display-wrapper__full-screen {
+    margin-left: calc((100vw - var(--monitor-control-width)) / 2);
+  }
+  .monitor-frame {
+    @apply flex justify-center;
+    width: calc(var(--monitor-control-width) - var(--joystick-container-width));
+    .monitor-frame__self {
+      position: absolute;
+      width: 100%;
+    }
+    .monitor-frame__power {
+      @apply absolute cursor-pointer hover:opacity-90;
+      font-size: 3.5vw;
+      top: calc(var(--screen-height) + var(--power-btn-top-from-screen));
+      right: var(--power-btn-right);
+    }
+    .monitor-frame__screen-wrapper {
+      width: calc(
+        var(--monitor-control-width) - var(--joystick-container-width) - 2 *
+          var(--screen-border)
+      );
+      margin-top: var(--screen-padding-top);
+      height: var(--screen-height);
+      #filter {
+        @apply absolute w-full h-full;
+      }
+    }
+  }
+}
